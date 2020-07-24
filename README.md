@@ -1,2 +1,3 @@
-# Observatorio_Laboral
-Repo para el Observatorio Laboral (UOH)
+# Observatorio Laboral
+
+Este es el repo del Observatorio Laboral (UOH).
