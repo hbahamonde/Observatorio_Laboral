@@ -1,6 +1,6 @@
 # Este script es para el Observatorio Laboral de la UOH.
 ## Hector Bahamonde, PhD
-## Prodesor Asistente, Instituto de Ciencias Sociales, UOH.
+## Profesor Asistente, Instituto de Ciencias Sociales, UOH.
 
 cat("\014")
 rm(list=ls())
@@ -12,7 +12,7 @@ if (!require("pacman")) install.packages("pacman"); library(pacman)
 
 # load data
 p_load(readxl)
-data <- read_excel("/Users/hectorbahamonde/RU/research/Observatorio_Laboral/enadel.xlsx", col_names = TRUE) 
+data <- read_excel("/Users/hectorbahamonde/research/Observatorio_Laboral/enadel.xlsx", col_names = TRUE) 
 
 
 ########################################################################################################################
@@ -90,7 +90,9 @@ empresa.genero.d = data.frame(
 ###############
 
 # Zelig
-p_load(Zelig)
+devtools::install_github('IQSS/Zelig')
+library(Zelig)
+
 
 
 z.out <- zelig(mujeres ~ 
